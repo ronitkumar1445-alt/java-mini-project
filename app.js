@@ -20,8 +20,8 @@ document.addEventListener("keypress",function(){
     function levelUp(){
         level++;
      h2.innerText = `level ${level}`;
-     let rendIdx=Math.floor(Math.random()*3);
-     let randColor=btns[rendIdx];
+     let randIdx=Math.floor(Math.random()*4);
+     let randColor=btns[randIdx];
      let randbtn= document.querySelector(`.${randColor}`);
      console.log(randIdx);
      console.log(randColor);
